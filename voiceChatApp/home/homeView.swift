@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+extension homeViewController {
+    
+    func addDashboard() {
+        dashboardView = UIView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: dashboardHeight))
+        dashboardView.backgroundColor = .blue
+        self.view.addSubview(dashboardView)
+    }
+}
