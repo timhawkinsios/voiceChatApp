@@ -15,7 +15,6 @@ class homeViewTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        
         controller = homeViewController()
     }
     
@@ -26,5 +25,10 @@ class homeViewTests: XCTestCase {
     func testAddDashboardRendersDashboard() {
         controller.addDashboard()
         XCTAssertNotNil(controller.dashboardView)
+    }
+    
+    func testAddContactButtonIsRendered() {
+        controller.addDashboard()
+        XCTAssertNotNil(controller.addContactButton)
     }
 }
