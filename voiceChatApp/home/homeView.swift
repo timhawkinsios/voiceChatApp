@@ -31,7 +31,12 @@ extension homeViewController {
         contactsButton.backgroundColor = .gray
         contactsButton.setTitle("CONTACTS", for: .normal)
         
+        recentsButton = UIButton(frame: CGRect(x: displayWidth / 2.0, y: 0, width: displayWidth / 2.0, height: dashboardHeight))
+        recentsButton.backgroundColor = .black
+        recentsButton.setTitle("RECENTS", for: .normal)
+        
         self.view.addSubview(tableOptionView)
         tableOptionView.addSubview(contactsButton)
+        tableOptionView.addSubview(recentsButton)
     }
 }
