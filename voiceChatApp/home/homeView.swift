@@ -26,5 +26,12 @@ extension homeViewController {
     func addTableOptionView() {
         tableOptionView = UIView(frame: CGRect(x: 0, y: barHeight + dashboardHeight, width: displayWidth, height: dashboardHeight))
         tableOptionView.backgroundColor = .black
+        
+        contactsButton = UIButton(frame: CGRect(x: 0, y: 0, width: displayWidth / 2.0, height: dashboardHeight))
+        contactsButton.backgroundColor = .gray
+        contactsButton.setTitle("CONTACTS", for: .normal)
+        
+        self.view.addSubview(tableOptionView)
+        tableOptionView.addSubview(contactsButton)
     }
 }

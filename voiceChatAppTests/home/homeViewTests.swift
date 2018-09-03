@@ -36,4 +36,9 @@ class homeViewTests: XCTestCase {
         controller.addTableOptionView()
         XCTAssertNotNil(controller.tableOptionView)
     }
+    
+    func testContactsButtonIsRendered() {
+        controller.addTableOptionView()
+        XCTAssertNotNil(controller.contactsButton)
+    }
 }

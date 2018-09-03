@@ -15,6 +15,7 @@ class homeViewController: UIViewController {
     public var dashboardView: UIView!
     public var tableOptionView: UIView!
     public var addContactButton: UIButton!
+    public var contactsButton: UIButton!
     
     public var displayWidth: CGFloat = 0.0
     public var displayHeight: CGFloat = 0.0
