@@ -23,12 +23,17 @@ class homeViewTests: XCTestCase {
     }
     
     func testAddDashboardRendersDashboard() {
-        controller.addDashboard()
+        controller.addDashboardView()
         XCTAssertNotNil(controller.dashboardView)
     }
     
     func testAddContactButtonIsRendered() {
-        controller.addDashboard()
+        controller.addDashboardView()
         XCTAssertNotNil(controller.addContactButton)
+    }
+    
+    func testTableOptionViewIsRendered() {
+        controller.addTableOptionView()
+        XCTAssertNotNil(controller.tableOptionView)
     }
 }

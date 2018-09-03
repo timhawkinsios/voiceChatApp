@@ -13,6 +13,7 @@ class homeViewController: UIViewController {
     public let dashboardHeight: CGFloat = 48.0
     
     public var dashboardView: UIView!
+    public var tableOptionView: UIView!
     public var addContactButton: UIButton!
     
     public var displayWidth: CGFloat = 0.0
@@ -26,7 +27,8 @@ class homeViewController: UIViewController {
         displayHeight = self.view.frame.height
         barHeight = UIApplication.shared.statusBarFrame.size.height
         
-        self.addDashboard()
+        self.addDashboardView()
+        self.addTableOptionView()
         self.view.backgroundColor = UIColor.red
     }
 }

@@ -11,7 +11,7 @@ import UIKit
 
 extension homeViewController {
     
-    func addDashboard() {
+    func addDashboardView() {
         dashboardView = UIView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: dashboardHeight))
         dashboardView.backgroundColor = .blue
         
@@ -21,5 +21,10 @@ extension homeViewController {
         
         self.view.addSubview(dashboardView)
         dashboardView.addSubview(addContactButton)
+    }
+    
+    func addTableOptionView() {
+        tableOptionView = UIView(frame: CGRect(x: 0, y: barHeight + dashboardHeight, width: displayWidth, height: dashboardHeight))
+        tableOptionView.backgroundColor = .black
     }
 }
