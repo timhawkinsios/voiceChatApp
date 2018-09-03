@@ -11,9 +11,9 @@
 		A026D48F213DBDB200956E26 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A026D48E213DBDB200956E26 /* homeViewController.swift */; };
 		A026D494213DBDB200956E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A026D493213DBDB200956E26 /* Assets.xcassets */; };
 		A026D497213DBDB200956E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A026D495213DBDB200956E26 /* LaunchScreen.storyboard */; };
-		A026D4A2213DBDB200956E26 /* voiceChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A026D4A1213DBDB200956E26 /* voiceChatAppTests.swift */; };
 		A026D4AD213DBDB200956E26 /* voiceChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A026D4AC213DBDB200956E26 /* voiceChatAppUITests.swift */; };
 		A026D4BD213DC32900956E26 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A026D4BC213DC32900956E26 /* homeView.swift */; };
+		A026D4C0213DCCD200956E26 /* homeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A026D4BF213DCCD200956E26 /* homeViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +41,12 @@
 		A026D496213DBDB200956E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A026D498213DBDB200956E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A026D49D213DBDB200956E26 /* voiceChatAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voiceChatAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A026D4A1213DBDB200956E26 /* voiceChatAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceChatAppTests.swift; sourceTree = "<group>"; };
 		A026D4A3213DBDB200956E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A026D4A8213DBDB200956E26 /* voiceChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voiceChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A026D4AC213DBDB200956E26 /* voiceChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceChatAppUITests.swift; sourceTree = "<group>"; };
 		A026D4AE213DBDB200956E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A026D4BC213DC32900956E26 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
+		A026D4BF213DCCD200956E26 /* homeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 		A026D4A0213DBDB200956E26 /* voiceChatAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				A026D4A1213DBDB200956E26 /* voiceChatAppTests.swift */,
+				A026D4BE213DCCA800956E26 /* home */,
 				A026D4A3213DBDB200956E26 /* Info.plist */,
 			);
 			path = voiceChatAppTests;
@@ -129,6 +129,14 @@
 			children = (
 				A026D48E213DBDB200956E26 /* homeViewController.swift */,
 				A026D4BC213DC32900956E26 /* homeView.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		A026D4BE213DCCA800956E26 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				A026D4BF213DCCD200956E26 /* homeViewTests.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -276,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A026D4A2213DBDB200956E26 /* voiceChatAppTests.swift in Sources */,
+				A026D4C0213DCCD200956E26 /* homeViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
