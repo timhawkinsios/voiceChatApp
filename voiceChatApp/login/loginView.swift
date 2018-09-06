@@ -20,7 +20,13 @@ extension loginViewController {
         usernameTextField.placeholder = "username"
         usernameTextField.textAlignment = .center
         
+        passwordTextField = UITextField(frame: CGRect(x: 0, y: 56, width: displayWidth - 32, height: 48))
+        passwordTextField.backgroundColor = .white
+        passwordTextField.placeholder = "password"
+        passwordTextField.textAlignment = .center
+        
         self.view.addSubview(loginInputsView)
         loginInputsView.addSubview(usernameTextField)
+        loginInputsView.addSubview(passwordTextField)
     }
 }
