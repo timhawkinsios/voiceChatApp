@@ -38,16 +38,16 @@ class loginViewControllerTests: XCTestCase {
     func testCreateAccountButtonPressedHidesLoginViewAndShowsSignUpView() {
         controller.createAccountButtonPressed()
         XCTAssertEqual(controller.loginInputsView.isHidden, true)
-        XCTAssertEqual(controller.signupInputsView.isHidden, false)
+        XCTAssertEqual(controller.signUpInputsView.isHidden, false)
     }
     
     func testCreateAccountButtonPressedTwiceHidesSignupViewAndShowsLoginView() {
         controller.createAccountButtonPressed()
         XCTAssertEqual(controller.loginInputsView.isHidden, true)
-        XCTAssertEqual(controller.signupInputsView.isHidden, false)
+        XCTAssertEqual(controller.signUpInputsView.isHidden, false)
         controller.createAccountButtonPressed()
         XCTAssertEqual(controller.loginInputsView.isHidden, false)
-        XCTAssertEqual(controller.signupInputsView.isHidden, true)
+        XCTAssertEqual(controller.signUpInputsView.isHidden, true)
     }
     
     func testsCreateAccountButtonPressedChangesButtonText() {

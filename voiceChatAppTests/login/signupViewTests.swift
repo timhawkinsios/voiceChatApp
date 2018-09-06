@@ -21,8 +21,25 @@ class singupViewTests: XCTestCase {
     
     func testAddsSignUpInputsViewRendersSignUpView() {
         controller.addSignupInputsView()
-        XCTAssertNotNil(controller.signupInputsView)
-        XCTAssertNotNil(controller.signupInputsView.superview)
+        XCTAssertNotNil(controller.signUpInputsView)
+        XCTAssertNotNil(controller.signUpInputsView.superview)
     }
     
+    func testSignUpButtonIsRendered() {
+        controller.addSignUpButton()
+        XCTAssertNotNil(controller.signUpButton)
+        XCTAssertNotNil(controller.signUpButton.superview)
+    }
+    
+    func testSignUpPasswordTextFieldIsRendered() {
+        controller.addSignUpButton()
+        XCTAssertNotNil(controller.signUpPasswordTextField)
+        XCTAssertNotNil(controller.signUpPasswordTextField.superview)
+    }
+    
+    func testSignUpUsernameTextFieldIsRendered() {
+        controller.addSignUpButton()
+        XCTAssertNotNil(controller.signUpUsernameTextField)
+        XCTAssertNotNil(controller.signUpUsernameTextField.superview)
+    }
 }

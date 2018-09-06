@@ -17,7 +17,10 @@ class loginViewController: UIViewController {
     var showHidePasswordButton: UIButton!
     var createAccountButton: UIButton!
     
-    var signupInputsView: UIView!
+    var signUpInputsView: UIView!
+    var signUpButton: UIButton!
+    var signUpPasswordTextField: UITextField!
+    var signUpUsernameTextField: UITextField!
     
     var displayWidth: CGFloat = 0.0
     var displayHeight: CGFloat = 0.0
@@ -49,11 +52,11 @@ class loginViewController: UIViewController {
     @objc func createAccountButtonPressed() {
         if loginInputsView.isHidden == true {
             loginInputsView.isHidden = false
-            signupInputsView.isHidden = true
+            signUpInputsView.isHidden = true
             createAccountButton.setTitle("Don't have an account? Create one", for: .normal)
         } else {
             loginInputsView.isHidden = true
-            signupInputsView.isHidden = false
+            signUpInputsView.isHidden = false
             createAccountButton.setTitle("back", for: .normal)
         }
     }
