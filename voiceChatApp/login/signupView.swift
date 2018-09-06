@@ -34,9 +34,15 @@ extension loginViewController {
         signUpUsernameTextField.placeholder = "username"
         signUpUsernameTextField.textAlignment = .center
         
+        emailTextField = UITextField(frame: CGRect(x: 0, y: 56, width: displayWidth - 32, height: 48))
+        emailTextField.backgroundColor = .white
+        emailTextField.placeholder = "email"
+        emailTextField.textAlignment = .center
+        
         self.view.addSubview(signUpInputsView)
         signUpInputsView.addSubview(signUpButton)
         signUpInputsView.addSubview(signUpPasswordTextField)
         signUpInputsView.addSubview(signUpUsernameTextField)
+        signUpInputsView.addSubview(emailTextField)
     }
 }

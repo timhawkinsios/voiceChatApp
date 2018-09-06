@@ -21,6 +21,7 @@ class loginViewController: UIViewController {
     var signUpButton: UIButton!
     var signUpPasswordTextField: UITextField!
     var signUpUsernameTextField: UITextField!
+    var emailTextField: UITextField!
     
     var displayWidth: CGFloat = 0.0
     var displayHeight: CGFloat = 0.0

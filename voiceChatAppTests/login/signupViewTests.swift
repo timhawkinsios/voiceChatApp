@@ -42,4 +42,10 @@ class singupViewTests: XCTestCase {
         XCTAssertNotNil(controller.signUpUsernameTextField)
         XCTAssertNotNil(controller.signUpUsernameTextField.superview)
     }
+    
+    func testEmailIsRendered() {
+        controller.addSignUpButton()
+        XCTAssertNotNil(controller.emailTextField)
+        XCTAssertNotNil(controller.emailTextField.superview)
+    }
 }
