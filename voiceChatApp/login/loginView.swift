@@ -27,9 +27,11 @@ extension loginViewController {
         passwordTextField.isSecureTextEntry = true
         
         loginButton = UIButton(frame: CGRect(x: 0, y: 112, width: displayWidth - 32, height: 48))
-        loginButton.backgroundColor = .white
+        loginButton.backgroundColor = .clear
         loginButton.setTitle("login", for: .normal)
-        loginButton.setTitleColor(style.backgroundColour, for: .normal)
+        loginButton.setTitleColor(.white, for: .normal)
+        loginButton.layer.borderWidth = 1.0
+        loginButton.layer.borderColor = UIColor.white.cgColor
         
         showHidePasswordButton = UIButton(frame: CGRect(x: displayWidth - 80, y: 56, width: 48, height: 48))
         showHidePasswordButton.backgroundColor = .clear
@@ -42,5 +44,14 @@ extension loginViewController {
         loginInputsView.addSubview(passwordTextField)
         loginInputsView.addSubview(loginButton)
         loginInputsView.addSubview(showHidePasswordButton)
+    }
+    
+    func addSignUpButton() {
+        signUpButton = UIButton(frame: CGRect(x: 16, y: displayHeight - 48, width: displayWidth - 32, height: 48))
+        signUpButton.backgroundColor = .clear
+        signUpButton.setTitle("Don't have an account? Create one", for: .normal)
+        signUpButton.setTitleColor(.white, for: .normal)
+        
+        self.view.addSubview(signUpButton)
     }
 }

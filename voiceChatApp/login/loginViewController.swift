@@ -15,6 +15,9 @@ class loginViewController: UIViewController {
     var passwordTextField: UITextField!
     var loginButton: UIButton!
     var showHidePasswordButton: UIButton!
+    var signUpButton: UIButton!
+    
+    var signupInputsView: UIView!
     
     var displayWidth: CGFloat = 0.0
     var displayHeight: CGFloat = 0.0
@@ -28,6 +31,7 @@ class loginViewController: UIViewController {
         barHeight = UIApplication.shared.statusBarFrame.size.height
 
         addLoginView()
+        addSignUpButton()
         self.view.backgroundColor = style.backgroundColour
     }
     
