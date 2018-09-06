@@ -50,6 +50,7 @@ class loginViewController: UIViewController {
         if loginInputsView.isHidden == true {
             loginInputsView.isHidden = false
             signupInputsView.isHidden = true
+            createAccountButton.setTitle("Don't have an account? Create one", for: .normal)
         } else {
             loginInputsView.isHidden = true
             signupInputsView.isHidden = false
