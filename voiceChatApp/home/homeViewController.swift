@@ -31,7 +31,7 @@ class homeViewController: UIViewController {
         
         self.addDashboardView()
         self.addTableOptionView()
-        self.view.backgroundColor = UIColor.red
+        self.view.backgroundColor = style.backgroundColour
     }
 }
 

@@ -17,6 +17,7 @@
 		A070E78C2141382A00ED9C69 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E78B2141382A00ED9C69 /* loginViewController.swift */; };
 		A070E78E2141399F00ED9C69 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E78D2141399F00ED9C69 /* loginView.swift */; };
 		A070E791214139CA00ED9C69 /* loginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E790214139CA00ED9C69 /* loginViewTests.swift */; };
+		A070E79321413A5700ED9C69 /* style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E79221413A5700ED9C69 /* style.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		A070E78B2141382A00ED9C69 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		A070E78D2141399F00ED9C69 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		A070E790214139CA00ED9C69 /* loginViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewTests.swift; sourceTree = "<group>"; };
+		A070E79221413A5700ED9C69 /* style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = style.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		A026D48B213DBDB200956E26 /* voiceChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				A070E79421413A6600ED9C69 /* style */,
 				A070E78A2141380C00ED9C69 /* login */,
 				A026D4BB213DC2EA00956E26 /* home */,
 				A026D48C213DBDB200956E26 /* AppDelegate.swift */,
@@ -164,6 +167,14 @@
 				A070E790214139CA00ED9C69 /* loginViewTests.swift */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		A070E79421413A6600ED9C69 /* style */ = {
+			isa = PBXGroup;
+			children = (
+				A070E79221413A5700ED9C69 /* style.swift */,
+			);
+			path = style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +313,7 @@
 				A070E78C2141382A00ED9C69 /* loginViewController.swift in Sources */,
 				A026D48F213DBDB200956E26 /* homeViewController.swift in Sources */,
 				A070E78E2141399F00ED9C69 /* loginView.swift in Sources */,
+				A070E79321413A5700ED9C69 /* style.swift in Sources */,
 				A026D48D213DBDB200956E26 /* AppDelegate.swift in Sources */,
 				A026D4BD213DC32900956E26 /* homeView.swift in Sources */,
 			);
