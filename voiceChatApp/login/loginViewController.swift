@@ -14,6 +14,7 @@ class loginViewController: UIViewController {
     var usernameTextField: UITextField!
     var passwordTextField: UITextField!
     var loginButton: UIButton!
+    var showHidePasswordButton: UIButton!
     
     var displayWidth: CGFloat = 0.0
     var displayHeight: CGFloat = 0.0
@@ -28,5 +29,9 @@ class loginViewController: UIViewController {
 
         addLoginView()
         self.view.backgroundColor = style.backgroundColour
+    }
+    
+    @objc func showHidePasswordButtonPressed() {
+        
     }
 }

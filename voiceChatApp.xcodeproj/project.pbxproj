@@ -18,6 +18,7 @@
 		A070E78E2141399F00ED9C69 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E78D2141399F00ED9C69 /* loginView.swift */; };
 		A070E791214139CA00ED9C69 /* loginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E790214139CA00ED9C69 /* loginViewTests.swift */; };
 		A070E79321413A5700ED9C69 /* style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E79221413A5700ED9C69 /* style.swift */; };
+		A070E7962141795600ED9C69 /* loginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7952141795600ED9C69 /* loginViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A070E78D2141399F00ED9C69 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		A070E790214139CA00ED9C69 /* loginViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewTests.swift; sourceTree = "<group>"; };
 		A070E79221413A5700ED9C69 /* style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = style.swift; sourceTree = "<group>"; };
+		A070E7952141795600ED9C69 /* loginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				A070E790214139CA00ED9C69 /* loginViewTests.swift */,
+				A070E7952141795600ED9C69 /* loginViewControllerTests.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			files = (
 				A070E791214139CA00ED9C69 /* loginViewTests.swift in Sources */,
 				A026D4C0213DCCD200956E26 /* homeViewTests.swift in Sources */,
+				A070E7962141795600ED9C69 /* loginViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

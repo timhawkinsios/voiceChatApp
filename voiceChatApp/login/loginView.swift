@@ -24,15 +24,23 @@ extension loginViewController {
         passwordTextField.backgroundColor = .white
         passwordTextField.placeholder = "password"
         passwordTextField.textAlignment = .center
+        passwordTextField.isSecureTextEntry = true
         
         loginButton = UIButton(frame: CGRect(x: 0, y: 112, width: displayWidth - 32, height: 48))
         loginButton.backgroundColor = .white
         loginButton.setTitle("login", for: .normal)
         loginButton.setTitleColor(style.backgroundColour, for: .normal)
         
+        showHidePasswordButton = UIButton(frame: CGRect(x: displayWidth - 80, y: 0, width: 48, height: 48))
+        showHidePasswordButton.backgroundColor = .clear
+        showHidePasswordButton.setTitle("+", for: .normal)
+        showHidePasswordButton.setTitleColor(style.backgroundColour, for: .normal)
+        showHidePasswordButton.addTarget(self, action: #selector(showHidePasswordButtonPressed), for: .touchUpInside)
+        
         self.view.addSubview(loginInputsView)
         loginInputsView.addSubview(usernameTextField)
         loginInputsView.addSubview(passwordTextField)
         loginInputsView.addSubview(loginButton)
+        passwordTextField.addSubview(showHidePasswordButton)
     }
 }

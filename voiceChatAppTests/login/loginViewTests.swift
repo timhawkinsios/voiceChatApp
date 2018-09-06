@@ -45,6 +45,19 @@ class loginViewTests: XCTestCase {
         XCTAssertNotNil(controller.passwordTextField.superview)
     }
     
+    func testShowHidePasswordButtonIsRendered() {
+        controller.addLoginView()
+        XCTAssertNotNil(controller.showHidePasswordButton)
+        XCTAssertNotNil(controller.showHidePasswordButton.superview)
+    }
+    
+    func testShowHidePasswordButtonCallsShowHidePasswordButtonAction() {
+        let actionMethod = self.controller.showHidePasswordButton.actions(forTarget: self.controller, forControlEvent: UIControlEvents.touchUpInside)
+        let actualMethodName = actionMethod?.first
+        let expectedMethodName = "showHidePasswordButtonPressed"
+        XCTAssertEqual(actualMethodName, expectedMethodName)
+    }
+    
     func testLoginButtonIsRendered() {
         controller.addLoginView()
         XCTAssertNotNil(controller.loginButton)
