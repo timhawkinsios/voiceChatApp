@@ -10,17 +10,17 @@ import UIKit
 
 class homeViewController: UIViewController {
     
-    public let dashboardHeight: CGFloat = 48.0
+    let dashboardHeight: CGFloat = 48.0
     
-    public var dashboardView: UIView!
-    public var tableOptionView: UIView!
-    public var addContactButton: UIButton!
-    public var contactsButton: UIButton!
-    public var recentsButton: UIButton!
+    var dashboardView: UIView!
+    var tableOptionView: UIView!
+    var addContactButton: UIButton!
+    var contactsButton: UIButton!
+    var recentsButton: UIButton!
     
-    public var displayWidth: CGFloat = 0.0
-    public var displayHeight: CGFloat = 0.0
-    public var barHeight: CGFloat = 0.0
+    var displayWidth: CGFloat = 0.0
+    var displayHeight: CGFloat = 0.0
+    var barHeight: CGFloat = 0.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
