@@ -10,7 +10,8 @@ import UIKit
 
 class loginViewController: UIViewController {
     
-    var loginView: UIView!
+    var loginInputsView: UIView!
+    var usernameTextField: UITextField!
     
     var displayWidth: CGFloat = 0.0
     var displayHeight: CGFloat = 0.0
@@ -23,7 +24,6 @@ class loginViewController: UIViewController {
         displayHeight = self.view.frame.height
         barHeight = UIApplication.shared.statusBarFrame.size.height
 
-        
         addLoginView()
         self.view.backgroundColor = style.backgroundColour
     }

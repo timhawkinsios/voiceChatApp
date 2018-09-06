@@ -29,7 +29,13 @@ class loginViewTests: XCTestCase {
     
     func testAddLoginViewRendersLoginView() {
         controller.addLoginView()
-        XCTAssertNotNil(controller.loginView)
-        XCTAssertNotNil(controller.loginView.superview)
+        XCTAssertNotNil(controller.loginInputsView)
+        XCTAssertNotNil(controller.loginInputsView.superview)
+    }
+    
+    func testUserNameTextInputIsRendered() {
+        controller.addLoginView()
+        XCTAssertNotNil(controller.usernameTextField)
+        XCTAssertNotNil(controller.usernameTextField.superview)
     }
 }
