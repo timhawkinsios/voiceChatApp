@@ -32,6 +32,12 @@ class loginViewController: UIViewController {
     }
     
     @objc func showHidePasswordButtonPressed() {
-        
+        if passwordTextField.isSecureTextEntry == true {
+            passwordTextField.isSecureTextEntry = false
+            showHidePasswordButton.setTitle("-", for: .normal)
+        } else {
+            passwordTextField.isSecureTextEntry = true
+            showHidePasswordButton.setTitle("+", for: .normal)
+        }
     }
 }

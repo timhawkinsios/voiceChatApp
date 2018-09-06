@@ -31,7 +31,7 @@ extension loginViewController {
         loginButton.setTitle("login", for: .normal)
         loginButton.setTitleColor(style.backgroundColour, for: .normal)
         
-        showHidePasswordButton = UIButton(frame: CGRect(x: displayWidth - 80, y: 0, width: 48, height: 48))
+        showHidePasswordButton = UIButton(frame: CGRect(x: displayWidth - 80, y: 56, width: 48, height: 48))
         showHidePasswordButton.backgroundColor = .clear
         showHidePasswordButton.setTitle("+", for: .normal)
         showHidePasswordButton.setTitleColor(style.backgroundColour, for: .normal)
@@ -41,6 +41,6 @@ extension loginViewController {
         loginInputsView.addSubview(usernameTextField)
         loginInputsView.addSubview(passwordTextField)
         loginInputsView.addSubview(loginButton)
-        passwordTextField.addSubview(showHidePasswordButton)
+        loginInputsView.addSubview(showHidePasswordButton)
     }
 }
