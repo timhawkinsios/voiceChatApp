@@ -34,4 +34,10 @@ class loginViewControllerTests: XCTestCase {
         controller.showHidePasswordButtonPressed()
         XCTAssertEqual(controller.passwordTextField.isSecureTextEntry, true)
     }
+    
+    func testSignUpButtonPressedHidesLoginViewAndShowsSignUpView() {
+        controller.signUpButtonPressed()
+        XCTAssertEqual(controller.loginInputsView.isHidden, true)
+        XCTAssertEqual(controller.signupInputsView.isHidden, false)
+    }
 }

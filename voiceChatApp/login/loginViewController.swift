@@ -32,6 +32,7 @@ class loginViewController: UIViewController {
 
         addLoginView()
         addSignUpButton()
+        addSignupInputsView()
         self.view.backgroundColor = style.backgroundColour
     }
     
@@ -46,6 +47,12 @@ class loginViewController: UIViewController {
     }
     
     @objc func signUpButtonPressed() {
-        
+        if loginInputsView.isHidden == true {
+            loginInputsView.isHidden = false
+            signupInputsView.isHidden = true
+        } else {
+            loginInputsView.isHidden = true
+            signupInputsView.isHidden = false
+        }
     }
 }
