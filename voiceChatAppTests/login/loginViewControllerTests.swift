@@ -35,9 +35,23 @@ class loginViewControllerTests: XCTestCase {
         XCTAssertEqual(controller.passwordTextField.isSecureTextEntry, true)
     }
     
-    func testSignUpButtonPressedHidesLoginViewAndShowsSignUpView() {
-        controller.signUpButtonPressed()
+    func testCreateAccountButtonPressedHidesLoginViewAndShowsSignUpView() {
+        controller.createAccountButtonPressed()
         XCTAssertEqual(controller.loginInputsView.isHidden, true)
         XCTAssertEqual(controller.signupInputsView.isHidden, false)
+    }
+    
+    func testCreateAccountButtonPressedTwiceHidesSignupViewAndShowsLoginView() {
+        controller.createAccountButtonPressed()
+        XCTAssertEqual(controller.loginInputsView.isHidden, true)
+        XCTAssertEqual(controller.signupInputsView.isHidden, false)
+        controller.createAccountButtonPressed()
+        XCTAssertEqual(controller.loginInputsView.isHidden, false)
+        XCTAssertEqual(controller.signupInputsView.isHidden, true)
+    }
+    
+    func testsCreateAccountButtonPressedChangesButtonText() {
+        controller.createAccountButtonPressed()
+        XCTAssertEqual(controller.createAccountButton.titleLabel?.text, "back")
     }
 }

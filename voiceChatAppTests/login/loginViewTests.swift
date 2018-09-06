@@ -66,14 +66,14 @@ class loginViewTests: XCTestCase {
     
     func testSignUpButtonIsRendered() {
         controller.addSignUpButton()
-        XCTAssertNotNil(controller.signUpButton)
-        XCTAssertNotNil(controller.signUpButton.superview)
+        XCTAssertNotNil(controller.createAccountButton)
+        XCTAssertNotNil(controller.createAccountButton.superview)
     }
     
     func testSignUpButtonCallsSignUpButtonPressed() {
-        let actionMethod = self.controller.signUpButton.actions(forTarget: self.controller, forControlEvent: UIControlEvents.touchUpInside)
+        let actionMethod = self.controller.createAccountButton.actions(forTarget: self.controller, forControlEvent: UIControlEvents.touchUpInside)
         let actualMethodName = actionMethod?.first
-        let expectedMethodName = "signUpButtonPressed"
+        let expectedMethodName = "createAccountButtonPressed"
         XCTAssertEqual(actualMethodName, expectedMethodName)
     }
 }

@@ -47,12 +47,12 @@ extension loginViewController {
     }
     
     func addSignUpButton() {
-        signUpButton = UIButton(frame: CGRect(x: 16, y: displayHeight - 48, width: displayWidth - 32, height: 48))
-        signUpButton.backgroundColor = .clear
-        signUpButton.setTitle("Don't have an account? Create one", for: .normal)
-        signUpButton.setTitleColor(.white, for: .normal)
-        signUpButton.addTarget(self, action: #selector(signUpButtonPressed), for: .touchUpInside)
+        createAccountButton = UIButton(frame: CGRect(x: 16, y: displayHeight - 48, width: displayWidth - 32, height: 48))
+        createAccountButton.backgroundColor = .clear
+        createAccountButton.setTitle("Don't have an account? Create one", for: .normal)
+        createAccountButton.setTitleColor(.white, for: .normal)
+        createAccountButton.addTarget(self, action: #selector(createAccountButtonPressed), for: .touchUpInside)
         
-        self.view.addSubview(signUpButton)
+        self.view.addSubview(createAccountButton)
     }
 }
