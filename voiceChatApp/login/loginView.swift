@@ -13,7 +13,7 @@ extension loginViewController {
     
     func addLoginView() {
         loginInputsView = UIView(frame: CGRect(x: 16, y: (displayHeight/3*2) - 80, width: displayWidth - 32, height: 160))
-        loginInputsView.backgroundColor = .blue
+        loginInputsView.backgroundColor = .clear
         
         usernameTextField = UITextField(frame: CGRect(x: 0, y: 0, width: displayWidth - 32, height: 48))
         usernameTextField.backgroundColor = .white
@@ -25,8 +25,14 @@ extension loginViewController {
         passwordTextField.placeholder = "password"
         passwordTextField.textAlignment = .center
         
+        loginButton = UIButton(frame: CGRect(x: 0, y: 112, width: displayWidth - 32, height: 48))
+        loginButton.backgroundColor = .white
+        loginButton.setTitle("login", for: .normal)
+        loginButton.setTitleColor(style.backgroundColour, for: .normal)
+        
         self.view.addSubview(loginInputsView)
         loginInputsView.addSubview(usernameTextField)
         loginInputsView.addSubview(passwordTextField)
+        loginInputsView.addSubview(loginButton)
     }
 }

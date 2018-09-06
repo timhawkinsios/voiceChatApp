@@ -13,6 +13,7 @@ class loginViewController: UIViewController {
     var loginInputsView: UIView!
     var usernameTextField: UITextField!
     var passwordTextField: UITextField!
+    var loginButton: UIButton!
     
     var displayWidth: CGFloat = 0.0
     var displayHeight: CGFloat = 0.0
