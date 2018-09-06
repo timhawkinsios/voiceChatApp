@@ -51,6 +51,7 @@ extension loginViewController {
         signUpButton.backgroundColor = .clear
         signUpButton.setTitle("Don't have an account? Create one", for: .normal)
         signUpButton.setTitleColor(.white, for: .normal)
+        signUpButton.addTarget(self, action: #selector(signUpButtonPressed), for: .touchUpInside)
         
         self.view.addSubview(signUpButton)
     }

@@ -44,4 +44,8 @@ class loginViewController: UIViewController {
             showHidePasswordButton.setTitle("+", for: .normal)
         }
     }
+    
+    @objc func signUpButtonPressed() {
+        
+    }
 }
