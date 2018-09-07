@@ -21,6 +21,7 @@
 		A070E7962141795600ED9C69 /* loginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7952141795600ED9C69 /* loginViewControllerTests.swift */; };
 		A070E79821418E0000ED9C69 /* signupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E79721418E0000ED9C69 /* signupView.swift */; };
 		A070E79A214197A700ED9C69 /* signupViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E799214197A700ED9C69 /* signupViewTests.swift */; };
+		A070E79E2141CA7500ED9C69 /* passwordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E79D2141CA7500ED9C69 /* passwordTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		A070E7952141795600ED9C69 /* loginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewControllerTests.swift; sourceTree = "<group>"; };
 		A070E79721418E0000ED9C69 /* signupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupView.swift; sourceTree = "<group>"; };
 		A070E799214197A700ED9C69 /* signupViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewTests.swift; sourceTree = "<group>"; };
+		A070E79D2141CA7500ED9C69 /* passwordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = passwordTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		A026D48B213DBDB200956E26 /* voiceChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				A070E79C2141CA5B00ED9C69 /* extensions */,
 				A070E79421413A6600ED9C69 /* style */,
 				A070E78A2141380C00ED9C69 /* login */,
 				A026D4BB213DC2EA00956E26 /* home */,
@@ -161,9 +164,8 @@
 		A070E78A2141380C00ED9C69 /* login */ = {
 			isa = PBXGroup;
 			children = (
+				A070E79B2141AA0600ED9C69 /* views */,
 				A070E78B2141382A00ED9C69 /* loginViewController.swift */,
-				A070E78D2141399F00ED9C69 /* loginView.swift */,
-				A070E79721418E0000ED9C69 /* signupView.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -184,6 +186,23 @@
 				A070E79221413A5700ED9C69 /* style.swift */,
 			);
 			path = style;
+			sourceTree = "<group>";
+		};
+		A070E79B2141AA0600ED9C69 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A070E78D2141399F00ED9C69 /* loginView.swift */,
+				A070E79721418E0000ED9C69 /* signupView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A070E79C2141CA5B00ED9C69 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A070E79D2141CA7500ED9C69 /* passwordTextField.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +344,7 @@
 				A070E79321413A5700ED9C69 /* style.swift in Sources */,
 				A026D48D213DBDB200956E26 /* AppDelegate.swift in Sources */,
 				A026D4BD213DC32900956E26 /* homeView.swift in Sources */,
+				A070E79E2141CA7500ED9C69 /* passwordTextField.swift in Sources */,
 				A070E79821418E0000ED9C69 /* signupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

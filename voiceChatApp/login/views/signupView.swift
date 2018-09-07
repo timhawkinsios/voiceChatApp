@@ -29,6 +29,12 @@ extension loginViewController {
         signUpPasswordTextField.textAlignment = .center
         signUpPasswordTextField.isSecureTextEntry = true
         
+        signUpShowHidePasswordButton = UIButton(frame: CGRect(x: displayWidth - 80, y: 112, width: 48, height: 48))
+        signUpShowHidePasswordButton.backgroundColor = .clear
+        signUpShowHidePasswordButton.setTitle("+", for: .normal)
+        signUpShowHidePasswordButton.setTitleColor(style.backgroundColour, for: .normal)
+        signUpShowHidePasswordButton.addTarget(self, action: #selector(showHidePasswordButtonPressed), for: .touchUpInside)
+        
         signUpUsernameTextField = UITextField(frame: CGRect(x: 0, y: 0, width: displayWidth - 32, height: 48))
         signUpUsernameTextField.backgroundColor = .white
         signUpUsernameTextField.placeholder = "username"
@@ -44,5 +50,6 @@ extension loginViewController {
         signUpInputsView.addSubview(signUpPasswordTextField)
         signUpInputsView.addSubview(signUpUsernameTextField)
         signUpInputsView.addSubview(emailTextField)
+        signUpInputsView.addSubview(signUpShowHidePasswordButton)
     }
 }

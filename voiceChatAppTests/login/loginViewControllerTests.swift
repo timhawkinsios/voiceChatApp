@@ -24,14 +24,14 @@ class loginViewControllerTests: XCTestCase {
     }
     
     func testPasswordIsNotSecureTextWhenShowHidePasswordButtonPressed() {
-        controller.showHidePasswordButtonPressed()
+        controller.showHidePasswordButtonPressed(password: controller.passwordTextField, button: controller.showHidePasswordButton)
         XCTAssertEqual(controller.passwordTextField.isSecureTextEntry, false)
     }
     
     func testPasswordIsSecureTextWhenShowHidePasswordButtonPressedTwice() {
-        controller.showHidePasswordButtonPressed()
+        controller.showHidePasswordButtonPressed(password: controller.passwordTextField, button: controller.showHidePasswordButton)
         XCTAssertEqual(controller.passwordTextField.isSecureTextEntry, false)
-        controller.showHidePasswordButtonPressed()
+        controller.showHidePasswordButtonPressed(password: controller.passwordTextField, button: controller.showHidePasswordButton)
         XCTAssertEqual(controller.passwordTextField.isSecureTextEntry, true)
     }
     

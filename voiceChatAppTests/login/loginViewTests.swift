@@ -54,7 +54,7 @@ class loginViewTests: XCTestCase {
     func testShowHidePasswordButtonCallsShowHidePasswordButtonAction() {
         let actionMethod = self.controller.showHidePasswordButton.actions(forTarget: self.controller, forControlEvent: UIControlEvents.touchUpInside)
         let actualMethodName = actionMethod?.first
-        let expectedMethodName = "showHidePasswordButtonPressed"
+        let expectedMethodName = "showHidePasswordButtonPressedWithPassword:button:"
         XCTAssertEqual(actualMethodName, expectedMethodName)
     }
     

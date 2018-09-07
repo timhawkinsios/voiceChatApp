@@ -22,6 +22,7 @@ class loginViewController: UIViewController {
     var signUpPasswordTextField: UITextField!
     var signUpUsernameTextField: UITextField!
     var emailTextField: UITextField!
+    var signUpShowHidePasswordButton: UIButton!
     
     var displayWidth: CGFloat = 0.0
     var displayHeight: CGFloat = 0.0
@@ -40,13 +41,13 @@ class loginViewController: UIViewController {
         self.view.backgroundColor = style.backgroundColour
     }
     
-    @objc func showHidePasswordButtonPressed() {
-        if passwordTextField.isSecureTextEntry == true {
-            passwordTextField.isSecureTextEntry = false
-            showHidePasswordButton.setTitle("-", for: .normal)
+    @objc func showHidePasswordButtonPressed(password: UITextField, button: UIButton) {
+        if password.isSecureTextEntry == true {
+            password.isSecureTextEntry = false
+            button.setTitle("-", for: .normal)
         } else {
-            passwordTextField.isSecureTextEntry = true
-            showHidePasswordButton.setTitle("+", for: .normal)
+            password.isSecureTextEntry = true
+            button.setTitle("+", for: .normal)
         }
     }
     
