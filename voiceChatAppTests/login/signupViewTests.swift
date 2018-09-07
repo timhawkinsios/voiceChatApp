@@ -54,4 +54,11 @@ class singupViewTests: XCTestCase {
         XCTAssertNotNil(controller.signUpShowHidePasswordButton)
         XCTAssertNotNil(controller.signUpShowHidePasswordButton.superview)
     }
+    
+    func testSignupShowHidePasswordButtonCallsShowHidePasswordButtonAction() {
+        let actionMethod = self.controller.signUpShowHidePasswordButton.actions(forTarget: self.controller, forControlEvent: UIControlEvents.touchUpInside)
+        let actualMethodName = actionMethod?.first
+        let expectedMethodName = "showHidePasswordButtonPressedWithPassword:button:"
+        XCTAssertEqual(actualMethodName, expectedMethodName)
+    }
 }
