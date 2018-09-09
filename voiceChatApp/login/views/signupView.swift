@@ -33,6 +33,7 @@ extension loginViewController {
         signUpShowHidePasswordButton.backgroundColor = .clear
         signUpShowHidePasswordButton.setTitle("+", for: .normal)
         signUpShowHidePasswordButton.setTitleColor(style.backgroundColour, for: .normal)
+        signUpShowHidePasswordButton.tag = 1
         signUpShowHidePasswordButton.addTarget(self, action: #selector(showHidePasswordButtonPressed), for: .touchUpInside)
         
         signUpUsernameTextField = UITextField(frame: CGRect(x: 0, y: 0, width: displayWidth - 32, height: 48))

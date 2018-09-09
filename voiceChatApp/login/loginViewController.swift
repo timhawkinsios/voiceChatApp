@@ -41,13 +41,31 @@ class loginViewController: UIViewController {
         self.view.backgroundColor = style.backgroundColour
     }
     
-    @objc func showHidePasswordButtonPressed(password: UITextField, button: UIButton) {
-        if password.isSecureTextEntry == true {
-            password.isSecureTextEntry = false
-            button.setTitle("-", for: .normal)
+    @objc func showHidePasswordButtonPressed(sender: UIButton) {
+        if sender.tag == 0 {
+            setLoginPasswordSecurity()
         } else {
-            password.isSecureTextEntry = true
-            button.setTitle("+", for: .normal)
+            setSignUpPasswordSecurity()
+        }
+    }
+    
+    private func setLoginPasswordSecurity() {
+        if passwordTextField.isSecureTextEntry == true {
+            passwordTextField.isSecureTextEntry = false
+            showHidePasswordButton.setTitle("-", for: .normal)
+        } else {
+            passwordTextField.isSecureTextEntry = true
+            showHidePasswordButton.setTitle("+", for: .normal)
+        }
+    }
+    
+    private func setSignUpPasswordSecurity() {
+        if signUpPasswordTextField.isSecureTextEntry == true {
+            signUpPasswordTextField.isSecureTextEntry = false
+            signUpShowHidePasswordButton.setTitle("-", for: .normal)
+        } else {
+            signUpPasswordTextField.isSecureTextEntry = true
+            signUpShowHidePasswordButton.setTitle("+", for: .normal)
         }
     }
     

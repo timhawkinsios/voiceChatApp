@@ -24,18 +24,25 @@ class loginViewControllerTests: XCTestCase {
     }
     
     func testPasswordIsNotSecureTextWhenShowHidePasswordButtonPressed() {
-        controller.showHidePasswordButtonPressed(password: controller.passwordTextField, button: controller.showHidePasswordButton)
+        controller.showHidePasswordButtonPressed(sender: controller.showHidePasswordButton)
         XCTAssertEqual(controller.passwordTextField.isSecureTextEntry, false)
     }
     
     func testPasswordIsSecureTextWhenShowHidePasswordButtonPressedTwice() {
-        controller.showHidePasswordButtonPressed(password: controller.passwordTextField, button: controller.showHidePasswordButton)
+        controller.showHidePasswordButtonPressed(sender: controller.showHidePasswordButton)
         XCTAssertEqual(controller.passwordTextField.isSecureTextEntry, false)
-        controller.showHidePasswordButtonPressed(password: controller.passwordTextField, button: controller.showHidePasswordButton)
+        controller.showHidePasswordButtonPressed(sender: controller.showHidePasswordButton)
         XCTAssertEqual(controller.passwordTextField.isSecureTextEntry, true)
     }
     
     func testSignUpPasswordIsInitiallySecureText() {
+        XCTAssertEqual(controller.signUpPasswordTextField.isSecureTextEntry, true)
+    }
+    
+    func testSignUpPasswordIsSecureTextWhenShowHidePasswordButtonPressedTwice() {
+        controller.showHidePasswordButtonPressed(sender: controller.signUpShowHidePasswordButton)
+        XCTAssertEqual(controller.signUpPasswordTextField.isSecureTextEntry, false)
+        controller.showHidePasswordButtonPressed(sender: controller.signUpShowHidePasswordButton)
         XCTAssertEqual(controller.signUpPasswordTextField.isSecureTextEntry, true)
     }
     

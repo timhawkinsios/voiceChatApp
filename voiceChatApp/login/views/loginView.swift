@@ -37,6 +37,7 @@ extension loginViewController {
         showHidePasswordButton.backgroundColor = .clear
         showHidePasswordButton.setTitle("+", for: .normal)
         showHidePasswordButton.setTitleColor(style.backgroundColour, for: .normal)
+        showHidePasswordButton.tag = 0
         showHidePasswordButton.addTarget(self, action: #selector(showHidePasswordButtonPressed), for: .touchUpInside)
         
         self.view.addSubview(loginInputsView)
