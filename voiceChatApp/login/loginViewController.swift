@@ -80,4 +80,12 @@ class loginViewController: UIViewController {
             createAccountButton.setTitle("back", for: .normal)
         }
     }
+    
+    @objc func loginButtonPressed() {
+        routeToHomeViewController()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }

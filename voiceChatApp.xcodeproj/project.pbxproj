@@ -21,7 +21,10 @@
 		A070E7962141795600ED9C69 /* loginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7952141795600ED9C69 /* loginViewControllerTests.swift */; };
 		A070E79821418E0000ED9C69 /* signupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E79721418E0000ED9C69 /* signupView.swift */; };
 		A070E79A214197A700ED9C69 /* signupViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E799214197A700ED9C69 /* signupViewTests.swift */; };
-		A070E79E2141CA7500ED9C69 /* passwordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E79D2141CA7500ED9C69 /* passwordTextField.swift */; };
+		A070E79E2141CA7500ED9C69 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E79D2141CA7500ED9C69 /* UITextField.swift */; };
+		A070E7A021454D5600ED9C69 /* loginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E79F21454D5600ED9C69 /* loginRouter.swift */; };
+		A070E7A32145522300ED9C69 /* loginRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7A22145522300ED9C69 /* loginRouterTests.swift */; };
+		A070E7A52145848D00ED9C69 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7A42145848D00ED9C69 /* UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +65,10 @@
 		A070E7952141795600ED9C69 /* loginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewControllerTests.swift; sourceTree = "<group>"; };
 		A070E79721418E0000ED9C69 /* signupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupView.swift; sourceTree = "<group>"; };
 		A070E799214197A700ED9C69 /* signupViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewTests.swift; sourceTree = "<group>"; };
-		A070E79D2141CA7500ED9C69 /* passwordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = passwordTextField.swift; sourceTree = "<group>"; };
+		A070E79D2141CA7500ED9C69 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		A070E79F21454D5600ED9C69 /* loginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginRouter.swift; sourceTree = "<group>"; };
+		A070E7A22145522300ED9C69 /* loginRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginRouterTests.swift; sourceTree = "<group>"; };
+		A070E7A42145848D00ED9C69 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 			children = (
 				A070E79B2141AA0600ED9C69 /* views */,
 				A070E78B2141382A00ED9C69 /* loginViewController.swift */,
+				A070E79F21454D5600ED9C69 /* loginRouter.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -173,9 +180,9 @@
 		A070E78F214139B400ED9C69 /* login */ = {
 			isa = PBXGroup;
 			children = (
-				A070E790214139CA00ED9C69 /* loginViewTests.swift */,
+				A070E7A12145520200ED9C69 /* views */,
 				A070E7952141795600ED9C69 /* loginViewControllerTests.swift */,
-				A070E799214197A700ED9C69 /* signupViewTests.swift */,
+				A070E7A22145522300ED9C69 /* loginRouterTests.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -200,9 +207,19 @@
 		A070E79C2141CA5B00ED9C69 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A070E79D2141CA7500ED9C69 /* passwordTextField.swift */,
+				A070E79D2141CA7500ED9C69 /* UITextField.swift */,
+				A070E7A42145848D00ED9C69 /* UIButton.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		A070E7A12145520200ED9C69 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A070E790214139CA00ED9C69 /* loginViewTests.swift */,
+				A070E799214197A700ED9C69 /* signupViewTests.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,10 +358,12 @@
 				A070E78C2141382A00ED9C69 /* loginViewController.swift in Sources */,
 				A026D48F213DBDB200956E26 /* homeViewController.swift in Sources */,
 				A070E78E2141399F00ED9C69 /* loginView.swift in Sources */,
+				A070E7A021454D5600ED9C69 /* loginRouter.swift in Sources */,
 				A070E79321413A5700ED9C69 /* style.swift in Sources */,
+				A070E7A52145848D00ED9C69 /* UIButton.swift in Sources */,
 				A026D48D213DBDB200956E26 /* AppDelegate.swift in Sources */,
 				A026D4BD213DC32900956E26 /* homeView.swift in Sources */,
-				A070E79E2141CA7500ED9C69 /* passwordTextField.swift in Sources */,
+				A070E79E2141CA7500ED9C69 /* UITextField.swift in Sources */,
 				A070E79821418E0000ED9C69 /* signupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A070E79A214197A700ED9C69 /* signupViewTests.swift in Sources */,
+				A070E7A32145522300ED9C69 /* loginRouterTests.swift in Sources */,
 				A070E791214139CA00ED9C69 /* loginViewTests.swift in Sources */,
 				A026D4C0213DCCD200956E26 /* homeViewTests.swift in Sources */,
 				A070E7962141795600ED9C69 /* loginViewControllerTests.swift in Sources */,

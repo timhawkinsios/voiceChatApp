@@ -15,6 +15,7 @@ class homeViewController: UIViewController {
     var dashboardView: UIView!
     var tableOptionView: UIView!
     var addContactButton: UIButton!
+    var userProfileButton: UIButton!
     var contactsButton: UIButton!
     var recentsButton: UIButton!
     
@@ -32,6 +33,27 @@ class homeViewController: UIViewController {
         self.addDashboardView()
         self.addTableOptionView()
         self.view.backgroundColor = style.backgroundColour
+    }
+    
+    @objc func radioButtonsPressed(sender: UIButton) {
+        if sender.tag == 1 {
+            contactsButton.addBorderToBottom(colour: .white)
+            recentsButton.removeBorders()
+            recentsButton.setTitle("RECENTS", for: .normal)
+            contactsButton.setTitleColor(.white, for: .normal)
+            recentsButton.setTitleColor(.gray, for: .normal)
+        }
+        if sender.tag == 2 {
+            recentsButton.addBorderToBottom(colour: .white)
+            contactsButton.removeBorders()
+            contactsButton.setTitle("CONTACTS", for: .normal)
+            contactsButton.setTitleColor(.gray, for: .normal)
+            recentsButton.setTitleColor(.white, for: .normal)
+        }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }
 

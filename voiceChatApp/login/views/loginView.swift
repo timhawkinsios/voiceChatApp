@@ -32,6 +32,7 @@ extension loginViewController {
         loginButton.setTitleColor(.white, for: .normal)
         loginButton.layer.borderWidth = 1.0
         loginButton.layer.borderColor = UIColor.white.cgColor
+        loginButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
         
         showHidePasswordButton = UIButton(frame: CGRect(x: displayWidth - 80, y: 56, width: 48, height: 48))
         showHidePasswordButton.backgroundColor = .clear
