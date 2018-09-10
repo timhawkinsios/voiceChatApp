@@ -25,6 +25,8 @@
 		A070E7A021454D5600ED9C69 /* loginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E79F21454D5600ED9C69 /* loginRouter.swift */; };
 		A070E7A32145522300ED9C69 /* loginRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7A22145522300ED9C69 /* loginRouterTests.swift */; };
 		A070E7A52145848D00ED9C69 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7A42145848D00ED9C69 /* UIButton.swift */; };
+		A070E7A8214593D500ED9C69 /* UIButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7A7214593D500ED9C69 /* UIButtonTests.swift */; };
+		A070E7AA21467B9600ED9C69 /* homeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7A921467B9600ED9C69 /* homeViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		A070E79F21454D5600ED9C69 /* loginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginRouter.swift; sourceTree = "<group>"; };
 		A070E7A22145522300ED9C69 /* loginRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginRouterTests.swift; sourceTree = "<group>"; };
 		A070E7A42145848D00ED9C69 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		A070E7A7214593D500ED9C69 /* UIButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonTests.swift; sourceTree = "<group>"; };
+		A070E7A921467B9600ED9C69 /* homeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,7 @@
 		A026D4A0213DBDB200956E26 /* voiceChatAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				A070E7A6214592F400ED9C69 /* extensions */,
 				A070E78F214139B400ED9C69 /* login */,
 				A026D4BE213DCCA800956E26 /* home */,
 				A026D4A3213DBDB200956E26 /* Info.plist */,
@@ -162,7 +167,8 @@
 		A026D4BE213DCCA800956E26 /* home */ = {
 			isa = PBXGroup;
 			children = (
-				A026D4BF213DCCD200956E26 /* homeViewTests.swift */,
+				A070E7AB21467BD500ED9C69 /* views */,
+				A070E7A921467B9600ED9C69 /* homeViewControllerTests.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -218,6 +224,22 @@
 			children = (
 				A070E790214139CA00ED9C69 /* loginViewTests.swift */,
 				A070E799214197A700ED9C69 /* signupViewTests.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A070E7A6214592F400ED9C69 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A070E7A7214593D500ED9C69 /* UIButtonTests.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		A070E7AB21467BD500ED9C69 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A026D4BF213DCCD200956E26 /* homeViewTests.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -373,9 +395,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A070E79A214197A700ED9C69 /* signupViewTests.swift in Sources */,
+				A070E7A8214593D500ED9C69 /* UIButtonTests.swift in Sources */,
 				A070E7A32145522300ED9C69 /* loginRouterTests.swift in Sources */,
 				A070E791214139CA00ED9C69 /* loginViewTests.swift in Sources */,
 				A026D4C0213DCCD200956E26 /* homeViewTests.swift in Sources */,
+				A070E7AA21467B9600ED9C69 /* homeViewControllerTests.swift in Sources */,
 				A070E7962141795600ED9C69 /* loginViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
