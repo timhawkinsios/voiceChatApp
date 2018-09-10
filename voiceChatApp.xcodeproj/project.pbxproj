@@ -27,6 +27,8 @@
 		A070E7A52145848D00ED9C69 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7A42145848D00ED9C69 /* UIButton.swift */; };
 		A070E7A8214593D500ED9C69 /* UIButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7A7214593D500ED9C69 /* UIButtonTests.swift */; };
 		A070E7AA21467B9600ED9C69 /* homeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7A921467B9600ED9C69 /* homeViewControllerTests.swift */; };
+		A070E7AF2146864000ED9C69 /* userViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7AE2146864000ED9C69 /* userViewController.swift */; };
+		A070E7B22146876700ED9C69 /* homeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7B12146876700ED9C69 /* homeRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		A070E7A42145848D00ED9C69 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		A070E7A7214593D500ED9C69 /* UIButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonTests.swift; sourceTree = "<group>"; };
 		A070E7A921467B9600ED9C69 /* homeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewControllerTests.swift; sourceTree = "<group>"; };
+		A070E7AE2146864000ED9C69 /* userViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userViewController.swift; sourceTree = "<group>"; };
+		A070E7B12146876700ED9C69 /* homeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,10 +127,9 @@
 		A026D48B213DBDB200956E26 /* voiceChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				A070E7AC2146860000ED9C69 /* pages */,
 				A070E79C2141CA5B00ED9C69 /* extensions */,
 				A070E79421413A6600ED9C69 /* style */,
-				A070E78A2141380C00ED9C69 /* login */,
-				A026D4BB213DC2EA00956E26 /* home */,
 				A026D48C213DBDB200956E26 /* AppDelegate.swift */,
 				A026D493213DBDB200956E26 /* Assets.xcassets */,
 				A026D495213DBDB200956E26 /* LaunchScreen.storyboard */,
@@ -158,8 +161,9 @@
 		A026D4BB213DC2EA00956E26 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				A070E7B02146875500ED9C69 /* views */,
 				A026D48E213DBDB200956E26 /* homeViewController.swift */,
-				A026D4BC213DC32900956E26 /* homeView.swift */,
+				A070E7B12146876700ED9C69 /* homeRouter.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -240,6 +244,32 @@
 			isa = PBXGroup;
 			children = (
 				A026D4BF213DCCD200956E26 /* homeViewTests.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A070E7AC2146860000ED9C69 /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				A070E7AD2146862900ED9C69 /* user */,
+				A026D4BB213DC2EA00956E26 /* home */,
+				A070E78A2141380C00ED9C69 /* login */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
+		A070E7AD2146862900ED9C69 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				A070E7AE2146864000ED9C69 /* userViewController.swift */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		A070E7B02146875500ED9C69 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A026D4BC213DC32900956E26 /* homeView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -381,6 +411,8 @@
 				A026D48F213DBDB200956E26 /* homeViewController.swift in Sources */,
 				A070E78E2141399F00ED9C69 /* loginView.swift in Sources */,
 				A070E7A021454D5600ED9C69 /* loginRouter.swift in Sources */,
+				A070E7AF2146864000ED9C69 /* userViewController.swift in Sources */,
+				A070E7B22146876700ED9C69 /* homeRouter.swift in Sources */,
 				A070E79321413A5700ED9C69 /* style.swift in Sources */,
 				A070E7A52145848D00ED9C69 /* UIButton.swift in Sources */,
 				A026D48D213DBDB200956E26 /* AppDelegate.swift in Sources */,

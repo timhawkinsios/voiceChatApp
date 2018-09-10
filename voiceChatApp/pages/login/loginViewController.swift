@@ -38,7 +38,7 @@ class loginViewController: UIViewController {
         addLoginView()
         addSignUpButton()
         addSignupInputsView()
-        self.view.backgroundColor = style.backgroundColour
+        self.view.backgroundColor = style.chirpsColour
     }
     
     @objc func showHidePasswordButtonPressed(sender: UIButton) {

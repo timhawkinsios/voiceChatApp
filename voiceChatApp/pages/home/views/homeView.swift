@@ -19,13 +19,14 @@ extension homeViewController {
         addContactButton.backgroundColor = .clear
         addContactButton.setTitle("+", for: .normal)
         
-        userProfileButton = UIButton(frame: CGRect(x: displayWidth - dashboardHeight, y: 0, width: dashboardHeight, height: dashboardHeight))
-        userProfileButton.backgroundColor = .clear
-        userProfileButton.setTitle("user", for: .normal)
+        userButton = UIButton(frame: CGRect(x: displayWidth - dashboardHeight, y: 0, width: dashboardHeight, height: dashboardHeight))
+        userButton.backgroundColor = .clear
+        userButton.setTitle("user", for: .normal)
+        userButton.addTarget(self, action: #selector(userButtonPressed), for: .touchUpInside)
         
         self.view.addSubview(dashboardView)
         dashboardView.addSubview(addContactButton)
-        dashboardView.addSubview(userProfileButton)
+        dashboardView.addSubview(userButton)
     }
     
     func addTableOptionView() {

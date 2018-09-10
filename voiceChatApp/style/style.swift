@@ -10,5 +10,5 @@ import Foundation
 import UIKit
 
 struct style {
-    static var backgroundColour = UIColor(red:0.94, green:0.56, blue:0.15, alpha:1.0)
+    static var chirpsColour = UIColor(red:0.94, green:0.56, blue:0.15, alpha:1.0)
 }

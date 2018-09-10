@@ -15,7 +15,7 @@ class homeViewController: UIViewController {
     var dashboardView: UIView!
     var tableOptionView: UIView!
     var addContactButton: UIButton!
-    var userProfileButton: UIButton!
+    var userButton: UIButton!
     var contactsButton: UIButton!
     var recentsButton: UIButton!
     
@@ -32,7 +32,7 @@ class homeViewController: UIViewController {
         
         self.addDashboardView()
         self.addTableOptionView()
-        self.view.backgroundColor = style.backgroundColour
+        self.view.backgroundColor = style.chirpsColour
     }
     
     @objc func radioButtonsPressed(sender: UIButton) {
@@ -50,6 +50,10 @@ class homeViewController: UIViewController {
             contactsButton.setTitleColor(.gray, for: .normal)
             recentsButton.setTitleColor(.white, for: .normal)
         }
+    }
+    
+    @objc func userButtonPressed() {
+        routeToUserViewController()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
