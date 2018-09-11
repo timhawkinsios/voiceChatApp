@@ -15,10 +15,10 @@ extension loginViewController {
         loginInputsView = UIView(frame: CGRect(x: 16, y: (displayHeight/3*2) - 80, width: displayWidth - 32, height: 160))
         loginInputsView.backgroundColor = .clear
         
-        usernameTextField = UITextField(frame: CGRect(x: 0, y: 0, width: displayWidth - 32, height: 48))
-        usernameTextField.backgroundColor = .white
-        usernameTextField.placeholder = "username"
-        usernameTextField.textAlignment = .center
+        loginEmailTextField = UITextField(frame: CGRect(x: 0, y: 0, width: displayWidth - 32, height: 48))
+        loginEmailTextField.backgroundColor = .white
+        loginEmailTextField.placeholder = "email"
+        loginEmailTextField.textAlignment = .center
         
         passwordTextField = UITextField(frame: CGRect(x: 0, y: 56, width: displayWidth - 32, height: 48))
         passwordTextField.backgroundColor = .white
@@ -42,7 +42,7 @@ extension loginViewController {
         showHidePasswordButton.addTarget(self, action: #selector(showHidePasswordButtonPressed), for: .touchUpInside)
         
         self.view.addSubview(loginInputsView)
-        loginInputsView.addSubview(usernameTextField)
+        loginInputsView.addSubview(loginEmailTextField)
         loginInputsView.addSubview(passwordTextField)
         loginInputsView.addSubview(loginButton)
         loginInputsView.addSubview(showHidePasswordButton)

@@ -35,8 +35,8 @@ class loginViewTests: XCTestCase {
     
     func testUserNameTextInputIsRendered() {
         controller.addLoginView()
-        XCTAssertNotNil(controller.usernameTextField)
-        XCTAssertNotNil(controller.usernameTextField.superview)
+        XCTAssertNotNil(controller.loginEmailTextField)
+        XCTAssertNotNil(controller.loginEmailTextField.superview)
     }
     
     func testPasswordTextFieldIsRendered() {

@@ -11,7 +11,7 @@ import UIKit
 class loginViewController: UIViewController {
     
     var loginInputsView: UIView!
-    var usernameTextField: UITextField!
+    var loginEmailTextField: UITextField!
     var passwordTextField: UITextField!
     var loginButton: UIButton!
     var showHidePasswordButton: UIButton!
@@ -86,7 +86,7 @@ class loginViewController: UIViewController {
     }
     
     @objc func loginButtonPressed() {
-        routeToHomeViewController()
+        signUpModelInstance.firebaseLogin(email: loginEmailTextField.text!, password: passwordTextField.text!, controller: self)
     }
     
     @objc func signUpButtonPressed() {
@@ -94,6 +94,11 @@ class loginViewController: UIViewController {
     }
     
     func signUpSuccessful() {
+        dump(self.signUpUsernameTextField.text)
+        routeToHomeViewController()
+    }
+    
+    func signInSuccessful() {
         routeToHomeViewController()
     }
     

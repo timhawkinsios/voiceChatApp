@@ -13,10 +13,28 @@ class loginModel {
     func firebaseSignUp(email: String, password: String, controller: loginViewController) {
         Auth.auth().createUser(withEmail: email, password: password, completion: {(user, error) in
             if user != nil {
-                controller.signUpSuccessful()
+                self.setUsername(controller: controller)
             } else {
                 controller.handleModelErrors(error: (error?.localizedDescription)!)
             }
         })
+    }
+    
+    func firebaseLogin(email: String, password: String, controller: loginViewController) {
+        Auth.auth().signIn(withEmail: email, password: password, completion: {(user, error) in
+            if user != nil {
+                controller.signInSuccessful()
+            } else {
+                dump(error)
+            }
+        })
+    }
+    
+    func setUsername(controller: loginViewController) {
+        let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+        changeRequest?.displayName = controller.signUpUsernameTextField.text!
+        changeRequest?.commitChanges { (error) in
+            controller.signUpSuccessful()
+        }
     }
 }
