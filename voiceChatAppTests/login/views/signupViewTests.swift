@@ -26,25 +26,25 @@ class singupViewTests: XCTestCase {
     }
     
     func testSignUpButtonIsRendered() {
-        controller.addSignUpButton()
+        controller.addFooterButtons()
         XCTAssertNotNil(controller.signUpButton)
         XCTAssertNotNil(controller.signUpButton.superview)
     }
     
     func testSignUpPasswordTextFieldIsRendered() {
-        controller.addSignUpButton()
+        controller.addFooterButtons()
         XCTAssertNotNil(controller.signUpPasswordTextField)
         XCTAssertNotNil(controller.signUpPasswordTextField.superview)
     }
     
     func testSignUpUsernameTextFieldIsRendered() {
-        controller.addSignUpButton()
+        controller.addFooterButtons()
         XCTAssertNotNil(controller.signUpUsernameTextField)
         XCTAssertNotNil(controller.signUpUsernameTextField.superview)
     }
     
     func testEmailIsRendered() {
-        controller.addSignUpButton()
+        controller.addFooterButtons()
         XCTAssertNotNil(controller.emailTextField)
         XCTAssertNotNil(controller.emailTextField.superview)
     }

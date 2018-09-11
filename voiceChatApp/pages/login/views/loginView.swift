@@ -48,7 +48,7 @@ extension loginViewController {
         loginInputsView.addSubview(showHidePasswordButton)
     }
     
-    func addSignUpButton() {
+    func addFooterButtons() {
         createAccountButton = UIButton(frame: CGRect(x: 16, y: displayHeight - 48, width: displayWidth - 32, height: 48))
         createAccountButton.backgroundColor = .clear
         createAccountButton.setTitle("Don't have an account? Create one", for: .normal)

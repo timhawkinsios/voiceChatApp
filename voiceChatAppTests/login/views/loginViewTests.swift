@@ -65,7 +65,7 @@ class loginViewTests: XCTestCase {
     }
     
     func testSignUpButtonIsRendered() {
-        controller.addSignUpButton()
+        controller.addFooterButtons()
         XCTAssertNotNil(controller.createAccountButton)
         XCTAssertNotNil(controller.createAccountButton.superview)
     }

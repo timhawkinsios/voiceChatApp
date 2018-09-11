@@ -10,9 +10,8 @@ import Foundation
 import UIKit
 
 extension loginViewController {
-    
     func addSignupInputsView() {
-        signUpInputsView = UIView(frame: CGRect(x: 16, y: (displayHeight/3*2) - 108, width: displayWidth - 32, height: 216))
+        signUpInputsView = UIView(frame: CGRect(x: 16, y: (displayHeight/3*2) - 126, width: displayWidth - 32, height: 252))
         signUpInputsView.backgroundColor = .clear
         signUpInputsView.isHidden = true
         
@@ -47,11 +46,21 @@ extension loginViewController {
         emailTextField.placeholder = "email"
         emailTextField.textAlignment = .center
         
+        errorMessageView = UILabel(frame: CGRect(x: 0, y: 216, width: displayWidth - 32, height: 36))
+        errorMessageView.backgroundColor = .clear
+        errorMessageView.textAlignment = .center
+        errorMessageView.textColor = .gray
+        errorMessageView.font = errorMessageView.font.withSize(12)
+
+        self.view.addSubview(createAccountButton)
+        self.view.addSubview(errorMessageView)
+        
         self.view.addSubview(signUpInputsView)
         signUpInputsView.addSubview(signUpButton)
         signUpInputsView.addSubview(signUpPasswordTextField)
         signUpInputsView.addSubview(signUpUsernameTextField)
         signUpInputsView.addSubview(emailTextField)
         signUpInputsView.addSubview(signUpShowHidePasswordButton)
+        signUpInputsView.addSubview(errorMessageView)
     }
 }

@@ -7,6 +7,7 @@ target 'voiceChatApp' do
 
   # Pods for voiceChatApp
 	pod 'Firebase/Core'
+    pod 'Firebase/Auth'
 
   target 'voiceChatAppTests' do
     inherit! :search_paths

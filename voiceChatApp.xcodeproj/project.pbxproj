@@ -36,6 +36,7 @@
 		A070E7B72146E34D00ED9C69 /* userRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7B62146E34D00ED9C69 /* userRouter.swift */; };
 		A070E7B92146F51200ED9C69 /* contactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7B82146F51200ED9C69 /* contactsView.swift */; };
 		A070E7BB2147E40000ED9C69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A070E7BA2147E40000ED9C69 /* GoogleService-Info.plist */; };
+		A070E7BD2147E57F00ED9C69 /* loginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070E7BC2147E57F00ED9C69 /* loginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		A070E7B62146E34D00ED9C69 /* userRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userRouter.swift; sourceTree = "<group>"; };
 		A070E7B82146F51200ED9C69 /* contactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactsView.swift; sourceTree = "<group>"; };
 		A070E7BA2147E40000ED9C69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A070E7BC2147E57F00ED9C69 /* loginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginModel.swift; sourceTree = "<group>"; };
 		CDA326A65BF17C3DB13FD227 /* Pods_voiceChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voiceChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D8E780E0A9BAADC5B5251F /* Pods-voiceChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceChatApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-voiceChatApp/Pods-voiceChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		E84C4AFDD8C42198BD5D07B9 /* Pods-voiceChatAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceChatAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-voiceChatAppUITests/Pods-voiceChatAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				A070E79B2141AA0600ED9C69 /* views */,
 				A070E78B2141382A00ED9C69 /* loginViewController.swift */,
 				A070E79F21454D5600ED9C69 /* loginRouter.swift */,
+				A070E7BC2147E57F00ED9C69 /* loginModel.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -540,11 +543,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-voiceChatApp/Pods-voiceChatApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -632,6 +637,7 @@
 				A070E78C2141382A00ED9C69 /* loginViewController.swift in Sources */,
 				A070E7B72146E34D00ED9C69 /* userRouter.swift in Sources */,
 				A026D48F213DBDB200956E26 /* homeViewController.swift in Sources */,
+				A070E7BD2147E57F00ED9C69 /* loginModel.swift in Sources */,
 				A070E7B92146F51200ED9C69 /* contactsView.swift in Sources */,
 				A070E78E2141399F00ED9C69 /* loginView.swift in Sources */,
 				A070E7A021454D5600ED9C69 /* loginRouter.swift in Sources */,

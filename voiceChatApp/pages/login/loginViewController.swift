@@ -15,7 +15,9 @@ class loginViewController: UIViewController {
     var passwordTextField: UITextField!
     var loginButton: UIButton!
     var showHidePasswordButton: UIButton!
+    
     var createAccountButton: UIButton!
+    var errorMessageView: UILabel!
     
     var signUpInputsView: UIView!
     var signUpButton: UIButton!
@@ -27,7 +29,9 @@ class loginViewController: UIViewController {
     var displayWidth: CGFloat = 0.0
     var displayHeight: CGFloat = 0.0
     var barHeight: CGFloat = 0.0
-
+    
+    let signUpModelInstance: loginModel = loginModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,7 +40,7 @@ class loginViewController: UIViewController {
         barHeight = UIApplication.shared.statusBarFrame.size.height
 
         addLoginView()
-        addSignUpButton()
+        addFooterButtons()
         addSignupInputsView()
         self.view.backgroundColor = style.chirpsColour
     }
@@ -86,7 +90,15 @@ class loginViewController: UIViewController {
     }
     
     @objc func signUpButtonPressed() {
+        signUpModelInstance.firebaseSignUp(email: emailTextField.text!, password: signUpPasswordTextField.text!, controller: self)
+    }
+    
+    func signUpSuccessful() {
         routeToHomeViewController()
+    }
+    
+    func handleModelErrors(error: String) {
+        errorMessageView.text = error
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
