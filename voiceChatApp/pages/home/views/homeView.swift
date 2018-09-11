@@ -12,16 +12,16 @@ import UIKit
 extension homeViewController {
     
     func addDashboardView() {
-        dashboardView = UIView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: dashboardHeight))
+        dashboardView = UIView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: style.dashboardHeight))
         dashboardView.backgroundColor = .clear
         
-        addContactButton = UIButton(frame: CGRect(x: 0, y: 0, width: dashboardHeight, height: dashboardHeight))
+        addContactButton = UIButton(frame: CGRect(x: 0, y: 0, width: style.dashboardHeight, height: style.dashboardHeight))
         addContactButton.backgroundColor = .clear
         addContactButton.setTitle("+", for: .normal)
         
-        userButton = UIButton(frame: CGRect(x: displayWidth - dashboardHeight, y: 0, width: dashboardHeight, height: dashboardHeight))
+        userButton = UIButton(frame: CGRect(x: displayWidth - style.dashboardHeight, y: 0, width: style.dashboardHeight, height: style.dashboardHeight))
         userButton.backgroundColor = .clear
-        userButton.setTitle("user", for: .normal)
+        userButton.setTitle("U", for: .normal)
         userButton.addTarget(self, action: #selector(userButtonPressed), for: .touchUpInside)
         
         self.view.addSubview(dashboardView)
@@ -30,17 +30,17 @@ extension homeViewController {
     }
     
     func addTableOptionView() {
-        tableOptionView = UIView(frame: CGRect(x: 0, y: barHeight + dashboardHeight, width: displayWidth, height: dashboardHeight))
+        tableOptionView = UIView(frame: CGRect(x: 0, y: barHeight + style.dashboardHeight, width: displayWidth, height: style.dashboardHeight))
         tableOptionView.backgroundColor = .clear
         
-        contactsButton = UIButton(frame: CGRect(x: 0, y: 0, width: displayWidth / 2.0, height: dashboardHeight))
+        contactsButton = UIButton(frame: CGRect(x: 0, y: 0, width: displayWidth / 2.0, height: style.dashboardHeight))
         contactsButton.backgroundColor = .clear
         contactsButton.setTitle("CONTACTS", for: .normal)
         contactsButton.addBorderToBottom(colour: .white)
         contactsButton.tag = 1
         contactsButton.addTarget(self, action: #selector(radioButtonsPressed), for: .touchUpInside)
         
-        recentsButton = UIButton(frame: CGRect(x: displayWidth / 2.0, y: 0, width: displayWidth / 2.0, height: dashboardHeight))
+        recentsButton = UIButton(frame: CGRect(x: displayWidth / 2.0, y: 0, width: displayWidth / 2.0, height: style.dashboardHeight))
         recentsButton.backgroundColor = .clear
         recentsButton.setTitle("RECENTS", for: .normal)
         recentsButton.setTitleColor(.gray, for: .normal)

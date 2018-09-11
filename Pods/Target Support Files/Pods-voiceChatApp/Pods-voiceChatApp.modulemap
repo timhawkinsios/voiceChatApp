@@ -1,0 +1,6 @@
+framework module Pods_voiceChatApp {
+  umbrella header "Pods-voiceChatApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

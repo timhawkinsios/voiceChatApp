@@ -11,4 +11,6 @@ import UIKit
 
 struct style {
     static var chirpsColour = UIColor(red:0.94, green:0.56, blue:0.15, alpha:1.0)
+    static var dashboardHeight: CGFloat = 48.0
+
 }

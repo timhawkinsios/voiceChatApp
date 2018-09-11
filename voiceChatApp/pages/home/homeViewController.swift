@@ -9,11 +9,10 @@
 import UIKit
 
 class homeViewController: UIViewController {
-    
-    let dashboardHeight: CGFloat = 48.0
-    
     var dashboardView: UIView!
     var tableOptionView: UIView!
+    var contactsView: UITableView!
+    
     var addContactButton: UIButton!
     var userButton: UIButton!
     var contactsButton: UIButton!
@@ -22,6 +21,13 @@ class homeViewController: UIViewController {
     var displayWidth: CGFloat = 0.0
     var displayHeight: CGFloat = 0.0
     var barHeight: CGFloat = 0.0
+    
+    var contactArray = [
+        ["Jack", "Jonny", "Barry", "Bruno"],
+        ["Jackson", "Drax"],
+        ["Gwen"],
+        ["Jack", "Jonny", "Barry", "Bruno"]
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +38,7 @@ class homeViewController: UIViewController {
         
         self.addDashboardView()
         self.addTableOptionView()
+        self.addContactsView()
         self.view.backgroundColor = style.chirpsColour
     }
     

@@ -22,6 +22,7 @@ extension loginViewController {
         signUpButton.setTitleColor(.white, for: .normal)
         signUpButton.layer.borderWidth = 1.0
         signUpButton.layer.borderColor = UIColor.white.cgColor
+        signUpButton.addTarget(self, action: #selector(signUpButtonPressed), for: .touchUpInside)
         
         signUpPasswordTextField = UITextField(frame: CGRect(x: 0, y: 112, width: displayWidth - 32, height: 48))
         signUpPasswordTextField.backgroundColor = .white

@@ -17,9 +17,12 @@ class loginRouterTests: XCTestCase {
         super.setUp()
         controller = loginViewController()
         controller.startViewLifecycle()
+
+        UIApplication.shared.keyWindow!.rootViewController = controller
+        let _ = controller.view
     }
     
     func testRouteToHomePageRendersHomeViewController() {
-        controller.routeToHomeViewController()
+
     }
 }

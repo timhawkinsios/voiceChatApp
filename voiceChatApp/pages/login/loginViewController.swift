@@ -85,6 +85,10 @@ class loginViewController: UIViewController {
         routeToHomeViewController()
     }
     
+    @objc func signUpButtonPressed() {
+        routeToHomeViewController()
+    }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
